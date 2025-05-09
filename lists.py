@@ -3,18 +3,13 @@
 def remove_elements(list_to_remove_elements):
     """remover los elementos que esten en la posición 1,5 y 6 de una lista que no sabemos el largo"""
    # me fijo si la lista tiene al menos 7 elementos
-    if len(list_to_remove_elements)>=7:
-        #eleimino las posiciones que yo quiero
-        del list_to_remove_elements[6]
-        del list_to_remove_elements[5]
-        del list_to_remove_elements[1]
-    
     if len(list_to_remove_elements)==6:
         del list_to_remove_elements[5]
-        del list_to_remove_elements[1]
+        del list_to_remove_elements [4]
+        del list_to_remove_elements[0]
     
-    if len(list_to_remove_elements) <= 5:
-        del list_to_remove_elements[1]
+    if len(list_to_remove_elements) == 4:
+        del list_to_remove_elements [0]
 
     return list_to_remove_elements
 
@@ -22,7 +17,7 @@ def remove_elements(list_to_remove_elements):
 def add_elements(list_to_add_elements):
     """agrego pink al principio de la lista y yellow al final de la lista"""
     #primero agrego pink al principio de la lista
-    list_to_add_elements.instert(0,"pink")
+    list_to_add_elements.insert(0,"pink")
     #ahora agrego yellow al final de la lista
     list_to_add_elements.append("yellow")
 
