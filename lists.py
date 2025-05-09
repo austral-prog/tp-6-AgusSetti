@@ -5,18 +5,18 @@ def remove_elements(list_to_remove_elements):
    # me fijo si la lista tiene al menos 7 elementos
     if len(list_to_remove_elements)>=7:
         #eleimino las posiciones que yo quiero
-        del list_to_remove_element[1]
-        del lista_to_remove_element[5]
-        del list_to_remove_element[6]
+        del list_to_remove_elements[1]
+        del lista_to_remove_elements[5]
+        del list_to_remove_elements[6]
     
-    if len(list_to_remove_element)==6:
-        del list_to_remove_element[1]
-        del list_to_remove_element[5]
+    if len(list_to_remove_elements)==6:
+        del list_to_remove_elements[1]
+        del list_to_remove_elements[5]
     
-    if len(list_to_remove_element) <= 5:
-        del list_to_remove_element[1]
+    if len(list_to_remove_elements) <= 5:
+        del list_to_remove_elements[1]
 
-    return list_to_remove_element
+    return list_to_remove_elements
 
 
 def add_elements(list_to_add_elements):
