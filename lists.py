@@ -43,22 +43,30 @@ def check_lists(list_to_compare1, list_to_compare2):
             return False
 
 
-def list_of_lists(lista1 ,lista2, lista3):
-    """de la primera lista solo se queda con los primeros dos elementos. de la segunda lista solo se quede con los elementos entre el segundo y cuarto elemento.De la tercera lista solo se quede con los ultimos 2 elementos(no se sabe el largo de las listas internas)"""
+def list_of_lists(list_of_lists):
+    """me dan una lista con tres listas adentro.De la primera lista solo se queda con los primeros dos elementos. de la segunda lista solo se quede con los elementos entre el segundo y cuarto elemento.De la tercera lista solo se quede con los ultimos 2 elementos no se sabe el largo de las listas internas"""
+    #me fijo si la lista tiene al menos 3 listas
+    if len(list_of_lists) >= 3:
+        lista1 = list_of_lists[0]
+        lista2 = list_of_lists[1]
+        lista3 = list_of_lists[2]
+    elif len(list_of_lists) < 3:
+        return "la lista no tiene tres listas"
+    
     #me fijo si la lista1 tiene al menos dos elementos
     if len(lista1) >= 2:
         lista1 = lista1[0:2]
     elif len(lista1) < 2:
         lista1 = lista1[0:1]
         return lista1
-
-    #me fijo si la lista2 tiene al menos 4 elementos
+    #me fijo si la lista2 tiene al menos 4 elementos        
     if len(lista2) >= 4:
         lista2 = lista2[1:4]
     elif len(lista2) < 4:
         lista2 = lista2[1:]
         return lista2
     #quiero los ultimos dos elementos de la lista3
-    lista3==lista3[-2:]
-    return lista3
+    lista3 = lista3[-2:]
+    return lista1, lista2, lista3
+    
   
