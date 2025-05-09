@@ -67,6 +67,6 @@ def list_of_lists(list_of_lists):
         return lista2
     #quiero los ultimos dos elementos de la lista3
     lista3 = lista3[-2:]
-    return lista1, lista2, lista3
+    return [lista1, lista2, lista3]
     
   
