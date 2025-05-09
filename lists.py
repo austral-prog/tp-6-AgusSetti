@@ -17,9 +17,9 @@ def remove_elements(list_to_remove_elements):
 def add_elements(list_to_add_elements):
     """agrego pink al principio de la lista y yellow al final de la lista"""
     #primero agrego pink al principio de la lista
-    list_to_add_elements.insert(0,"pink")
+    list_to_add_elements.insert(0,"Pink")
     #ahora agrego yellow al final de la lista
-    list_to_add_elements.append("yellow")
+    list_to_add_elements.append("Yellow")
 
     return list_to_add_elements
 
