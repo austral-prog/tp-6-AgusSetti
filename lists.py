@@ -6,7 +6,7 @@ def remove_elements(list_to_remove_elements):
     if len(list_to_remove_elements)>=7:
         #eleimino las posiciones que yo quiero
         del list_to_remove_elements[6]
-        del lista_to_remove_elements[5]
+        del list_to_remove_elements[5]
         del list_to_remove_elements[1]
     
     if len(list_to_remove_elements)==6:
